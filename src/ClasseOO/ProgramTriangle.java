@@ -20,24 +20,20 @@ public class ProgramTriangle {
         x.a = sc.nextDouble();
         x.b = sc.nextDouble();
         x.c = sc.nextDouble();
-        System.out.println();
         System.out.println("Digite as medidas do triangulo Y: ");
         y.a = sc.nextDouble();
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
-        double p = (x.a + x.b + x.c) / 2;
-        double areaX =  Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
+        x.area();
 
-         p = (y.a +y.b + y.c) / 2;
-        double areaY =  Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+        y.area();
 
-
-        System.out.printf("Area do Triangulo X = %.4f%n " , areaX);
-        System.out.printf("Area do Triangulo Y = %.4f%n " , areaY);
+        System.out.printf("Area do Triangulo X = %.4f%n " , x.area());
+        System.out.printf("Area do Triangulo Y = %.4f%n " , y.area());
 
 
-        if ( areaX < areaY){
+        if ( x.area() < y.area()){
             System.out.println("Triangulo  Maior : Y ");
         }else {
             System.out.println("Triangulo  Maior : X ");
