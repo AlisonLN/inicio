@@ -26,7 +26,7 @@ public class ProgramTV {
         System.out.println();
         System.out.print("Enter the number of products to be added in stock : ");
         int quant = sc.nextInt(); // criou uma variavel quant
-        productTV.addProduct(quant); // essa variavel criada foi adicionada no metododo para aumentar o  produto em estock,faz a atualizacao
+        productTV.addProduct(quant); // essa variavel criada foi adicionada no metododo para aumentar o  produto em stock,faz a atualizacao
 
         System.out.println();
         System.out.println("Update data : " + productTV.toString());
