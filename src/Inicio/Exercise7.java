@@ -1,3 +1,5 @@
+package Inicio;
+
 import java.util.Locale;
 import java.util.Scanner;
 //Fazer um programa que leia três valores com ponto flutuante de dupla precisão: A, B e C. Em seguida, calcule e
