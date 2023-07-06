@@ -1,9 +1,9 @@
-package DoWhile;
+package While;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Exercise4 {
+public class Exercise11 {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
@@ -13,10 +13,11 @@ public class Exercise4 {
         int gasolina = 0;
         int diesel = 0;
 
+        System.out.print("Oque Deseja Abastecer : ");
         int cod = sc.nextInt();
 
 
-        while (cod != 4){
+        while (cod < 4){
             if (cod == 1){
                 alcool = alcool + 1;
             } else if (cod == 2) {
@@ -24,6 +25,7 @@ public class Exercise4 {
             } else if (cod == 3) {
                 diesel = diesel + 1;
             }
+            System.out.print("Oque Deseja Abastecer : ");
             cod = sc.nextInt();
         }
 
