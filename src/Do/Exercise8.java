@@ -9,8 +9,9 @@ public class Exercise8 {
         Locale.setDefault(Locale.US);
 
         int cabelo,sexo,masculino,feminino,cabeloPreto,
-        cabeloCastanho, cabeloLoiro, cabeloRuivo,idade,resp;
+        cabeloCastanho, cabeloLoiro, cabeloRuivo,idade;
         int hmaioridade,entreidade,hentreidade,fmaioridade;
+        String resp;
 
         fmaioridade = 0;
         hmaioridade = 0;
@@ -70,9 +71,9 @@ do {
 
 
 
-    System.out.print("Deseja Continuar ? 1=S / 2=N : ");
-    resp = sc.nextInt();
-        }while (resp == 1) ;
+    System.out.print("Deseja Continuar ? [S/N] : ");
+    resp = sc.next();
+        }while (resp.equals("s")) ;
 
         System.out.println("Total de homens com mais de 18 e cabelos castanho  é " + cabeloCastanho);
         System.out.println("Total de mulheres com idade entre 25 e 30 e cabelos loiros é " + cabeloLoiro);

@@ -10,12 +10,12 @@ public class Exercise1 {
 
         int cont;
 
-        cont = 10;
+        cont = 0;
 
         do {                            // repitaa
             System.out.println(cont);
-            cont = cont - 1;
-        }   while (cont >= 0) ; // enquanto o cont for menor igual a 10
+            cont = cont + 1;
+        }   while (cont <= 10) ; // enquanto o cont for menor igual a 10
 
 
 

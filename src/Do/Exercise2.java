@@ -17,8 +17,8 @@ public class Exercise2 {
         tabuada = 0;
 
         do {
-            tabuada = n * cont;
-            System.out.println(n+ " X " +cont +" = "+ tabuada);
+         //   tabuada = n * cont;
+            System.out.println(n);
 
             cont = cont + 1;
         }   while (cont <= 10) ;
